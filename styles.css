@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+    height: 200px;
+    background-image: url('slimezy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.center-image:hover {
+    background-image: url('slimezee.png'); /* Change image on hover */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 300px;
+    position: relative;
+}
+
+.input-box {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    padding-right: 40px; /* Extra space for button */
+}
+
+.input-icon, .button-image {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.password-message, .subscribe-message {
+    color: red; /* Default red for error messages */
+    margin-top: 10px;
+    display: none;
+}
+
+.password-message.success, .subscribe-message.success {
+    color: #00FF00; /* Green for success */
+}
+
+.subscribe-button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

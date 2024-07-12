@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.verification-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#loading-logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    margin-bottom: 20px; /* Space between logo and verify image */
+}
+
+#verify-img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px; /* Space between verify image and checkbox container */
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between checkbox container and box below image */
+}
+
+#verify-checkbox {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space between checkbox and click image */
+}
+
+#click-img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+#box-below-img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}

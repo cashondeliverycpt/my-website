@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png"> <!-- Add this line for the favicon -->
+</head>
+<body>
+    <div class="container">
+        <div class="center-image" id="logo"></div>
+        <div class="input-container">
+            <input type="password" id="password-input" placeholder="Unlock password" class="input-box">
+            <img src="lock.png" alt="Lock Icon" class="input-icon right-icon" id="lock-icon">
+        </div>
+        <p id="password-message" class="password-message"></p>
+        <div class="input-container">
+            <input type="text" id="email-input" placeholder="Enter Email to Subscribe" class="input-box">
+            <button class="subscribe-button">
+                <img src="enter.png" alt="Enter" class="button-image">
+            </button>
+        </div>
+        <p id="subscribe-message" class="subscribe-message"></p>
+    </div>
+    <form id="hidden-form" action="https://script.google.com/macros/s/AKfycbxmw6aAq0niRL_l0x8kAf3CFGfzaXVaGgE181EQFudIdmZfYb1mMZ_zsfkaivLM6275/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+        <input type="hidden" name="email" id="hidden-email-input">
+        <input type="hidden" name="password" id="hidden-password-input">
+        <input type="submit" style="display:none;">
+    </form>
+    <iframe name="hidden_iframe" style="display:none;" onload="if(submitted) { submitted = false; }"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
